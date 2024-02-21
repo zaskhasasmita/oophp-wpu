@@ -2,7 +2,7 @@
 
 use Produk as GlobalProduk;
 
-interface infoProduk {
+interface InfoProduk {
     public function getInfoProduk();
 }
 
@@ -71,7 +71,7 @@ abstract class Produk {
 
 
 // Mendefinisikan class Komik yang merupakan turunan dari class Produk
-class Komik extends Produk implements infoProduk{
+class Komik extends Produk implements InfoProduk{
     public $jmlHalaman; // Properti khusus untuk class Komik
 
     // Constructor class Komik
@@ -95,7 +95,7 @@ class Komik extends Produk implements infoProduk{
 
 
 // Mendefinisikan class Game yang merupakan turunan dari class Produk
-class Game extends Produk implements infoProduk{
+class Game extends Produk implements InfoProduk{
     public $waktuMain; // Properti khusus untuk class Game
 
     // Constructor class Game
